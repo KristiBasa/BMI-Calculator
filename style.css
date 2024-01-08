@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+#container {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 500px;
+  height: 330px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.input-container {
+  margin-top: 10px;
+}
+
+input[type="number"] {
+  border-radius: 10px;
+  border: none;
+  width: 50%;
+  height: 35px;
+  font-size: 1em;
+  margin-left: 5px;
+  padding-left: 10px;
+}
+
+input[type="radio"] {
+  margin-bottom: 10px;
+}
+
+.radio {
+  margin-left: 20px;
+}
+
+button {
+  width: 70%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #0049b7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.reset {
+  margin-top: 10px;
+}
+
+#result {
+  margin-top: 30px;
+}
+
+.table {
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 500px;
+  height: 330px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #3e4060;
+  padding: 10px;
+}
+
+tr:nth-child(1) {
+  background-color: #411df7;
+  color: white;
+}
+
+tr:nth-child(2) {
+  background-color: #f7d21d;
+}
+
+tr:nth-child(3) {
+  background-color: #47b34e;
+}
+
+tr:nth-child(4) {
+  background-color: #fcab5f;
+}
+
+tr:nth-child(5) {
+  background-color: #ff811a;
+}
+
+tr:nth-child(6) {
+  background-color: #ed500c;
+}
+
+tr:nth-child(7) {
+  background-color: #ee2b2b;
+}
+
+@media (max-width: 600px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #container {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 300px;
+    height: 340px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px auto;
+  }
+  .table {
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    height: 330px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  button {
+    width: 80%;
+  }
+}
+
+footer {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+#height2,
+#weight2 {
+  display: none;
+  margin-left: 5px;
+}
+
+input[id="height2"],
+input[id="weight2"],
+input[placeholder="Stones"],
+input[placeholder="Feet"] {
+  width: 30%;
+}
