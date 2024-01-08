@@ -182,5 +182,6 @@ function resetForm() {
     resultOutput.innerHTML = "";
   }
 }
-metricRadio.addEventListener(resetForm);
-imperialRadio.addEventListener(resetForm);
+metricRadio.addEventListener("change", resetForm);
+imperialRadio.addEventListener("change", resetForm);
+
