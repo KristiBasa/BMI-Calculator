@@ -150,7 +150,7 @@ function handleRadioChange() {
   } else if (imperialRadio.checked) {
     heightInput.placeholder = "Feet";
     heightInput2.placeholder = "Inches";
-    weightInput.placeholder = "Stones";
+    weightInput.placeholder = "Stone";
     weightInput2.placeholder = "Pounds";
   }
 }
